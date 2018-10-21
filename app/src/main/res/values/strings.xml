@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AppPowerCorpore</string>
+    <string name="fragment_auth_user">Name</string>
+    <string name="login_hint_user">User Name</string>
+    <string name="login_pass">Password</string>
+    <string name="login_hint_pass">Password</string>
+    <string name="login_email">Email</string>
+    <string name="login_hint_email">Email</string>
+    <string name="fragment_button_connect">Sign In</string>
 </resources>

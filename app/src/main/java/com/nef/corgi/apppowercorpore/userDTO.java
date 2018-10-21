@@ -34,9 +34,12 @@ public class userDTO {
         this.email_user = email_user;
         this.pass = pass;
     }
-    public userDTO(){
-        user_name="name";
-        email_user="email";
-        pass="1234";
+
+    public userDTO() {
+        user_name = "name";
+        email_user = "email";
+        pass = "1234";
     }
 }
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppPowerCorpore</string>
+    <string name="fragment_auth_user">Nombre</string>
+    <string name="login_hint_user">Introduce tu Nombre</string>
+    <string name="login_pass">Contraseña</string>
+    <string name="login_hint_pass">Introduce la Contraseña</string>
+    <string name="login_email">Email</string>
+    <string name="login_hint_email">Introduce tu Email</string>
+    <string name="fragment_button_connect">Iniciar Sesion</string>
+</resources>
