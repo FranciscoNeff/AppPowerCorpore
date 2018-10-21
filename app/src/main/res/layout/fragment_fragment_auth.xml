@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="600dp">
+        android:layout_height="280dp">
         <!-- TODO: Update blank fragment layout -->
         <TextView
             android:id="@+id/fragment_auth_label_user"
@@ -24,6 +24,7 @@
 
         <EditText
             android:id="@+id/fragment_auth_edit_name"
+            style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/fragment_auth_edit_pass"
@@ -31,7 +32,7 @@
             android:ems="10"
             android:hint="@string/login_hint_user"
             android:inputType="text"
-            android:textStyle="italic"/>
+            android:textStyle="italic" />
 
 
         <TextView
@@ -40,12 +41,13 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/fragment_auth_label_user"
             android:layout_alignStart="@+id/fragment_auth_label_user"
-            android:text="@string/login_pass"
             android:layout_marginBottom="12dp"
+            android:text="@string/login_pass"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <EditText
             android:id="@+id/fragment_auth_edit_pass"
+            style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/fragment_auth_label_user"
@@ -53,7 +55,7 @@
             android:ems="10"
             android:hint="@string/login_hint_pass"
             android:inputType="textPassword"
-            android:textStyle="italic"/>
+            android:textStyle="italic" />
 
 
         <TextView
@@ -67,11 +69,13 @@
 
         <EditText
             android:id="@+id/fragment_auth_edit_email"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/fragment_auth_label_pass"
-            android:layout_marginTop="0dp"
             android:layout_alignStart="@+id/fragment_auth_edit_pass"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="12dp"
             android:layout_toEndOf="@+id/fragment_auth_label_email"
             android:ems="10"
             android:hint="@string/login_hint_email"
@@ -85,7 +89,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/fragment_auth_edit_email"
-            android:layout_marginBottom="-419dp"
+            android:layout_marginBottom="-52dp"
+
+            android:ems="10"
             android:text="@string/fragment_button_connect" />
 
     </RelativeLayout>

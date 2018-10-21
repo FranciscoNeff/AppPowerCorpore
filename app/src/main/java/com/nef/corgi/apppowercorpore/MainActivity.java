@@ -9,8 +9,8 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
-public class MainActivity extends AppCompatActivity {
+//el email sera el identificador unico de nuestra aplicacion
+public class MainActivity extends AppCompatActivity implements Autehtication.OnFragmentInteractionListener{
 private userDTO user=null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,8 +18,9 @@ private userDTO user=null;
         setContentView(R.layout.activity_main);
         Log.d("INICIO","Bienvenido a PowerCorpore");
         FragmentManager fm = getSupportFragmentManager();
-        Fragment temp = fm.findFragmentById(R.id.main_container);
-        if(temp==null) {
+        Fragment email_user = fm.findFragmentById(R.id.main_container);
+        //Si no tenemos usuario iniciado incluimos la authetication,si no le damos la bienvenida
+        if(email_user==null) {
             FragmentTransaction ft = fm.beginTransaction();
             Autehtication fragment = Autehtication.newInstance("", "");
             ft.add(R.id.main_container, fragment, "login");
@@ -38,7 +39,7 @@ private userDTO user=null;
 
         }
 
-        changetitle(user.getEmail_user());
+     //   changetitle(user.getEmail_user());
     }
 
     public void changetitle(String title){
@@ -51,14 +52,14 @@ private userDTO user=null;
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
-        outState.putString("domain",user.getEmail_user());
+        outState.putString("email",user.getEmail_user());
     }
 
+    @Override
+    public void onFragmentInteraction(userDTO name) {
 
-    public void onFragmentInteraction(userDTO emailu) {
-
-        this.user.setEmail_user(emailu.getEmail_user());
-        changetitle(user.getEmail_user());
+        this.user.setUser_name(name.getUser_name());
+        changetitle(user.getUser_name());
     }
     }
 

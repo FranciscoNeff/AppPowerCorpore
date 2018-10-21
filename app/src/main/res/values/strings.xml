@@ -9,7 +9,7 @@
     <string name="fragment_button_connect">Sign In</string>
     <string name="navigation_drawer_open">navigation_drawer_open</string>
     <string name="navigation_drawer_close">navigation_drawer_close</string>
-    <string name="main_description">Welcome to Power Corpore</string>
+    <string name="main_description">Welcome to</string>
     <string name="mainactivity_fragmentepresent">Fragment active</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_service">ServiceActivity</string>

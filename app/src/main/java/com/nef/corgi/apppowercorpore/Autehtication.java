@@ -1,6 +1,7 @@
 package com.nef.corgi.apppowercorpore;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -60,8 +61,14 @@ public class Autehtication extends Fragment {
                 String s_email = email.getEditableText().toString();
 
                 user = new userDTO(s_user, s_pass, s_email);
-                Toast.makeText(getActivity(),s_user+"Hola",Toast.LENGTH_LONG);
-
+               // Toast.makeText(getActivity(),s_user+"Hola",Toast.LENGTH_LONG);
+                Intent intent = new Intent(getActivity(),ServiceActivity.class);
+                intent.putExtra(ServiceActivity.PARAMETER_USER,s_user);
+                intent.putExtra("pass",s_pass);
+                intent.putExtra("email",s_email);
+                intent.putExtra("pass",s_pass);
+                //startActivity(intent);
+                mListener.onFragmentInteraction(user);
             }
 
         });
@@ -82,4 +89,5 @@ public class Autehtication extends Fragment {
         super.onDetach();
         mListener = null;
     }
+
 }
