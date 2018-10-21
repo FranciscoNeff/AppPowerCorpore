@@ -8,4 +8,6 @@
     <string name="login_email">Email</string>
     <string name="login_hint_email">Introduce tu Email</string>
     <string name="fragment_button_connect">Iniciar Sesion</string>
+    <string name="main_description">Bienvenido a Power Corpore</string>
+    <string name="mainactivity_fragmentepresent">Fragmento ya activo</string>
 </resources>
