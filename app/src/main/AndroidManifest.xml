@@ -17,6 +17,11 @@
             </intent-filter>
         </activity>
         <activity android:name="com.nef.corgi.apppowercorpore.MainActivity"/>
+        <activity
+            android:name=".ServiceActivity"
+            android:label="@string/title_activity_service"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
+
 
 </manifest>
