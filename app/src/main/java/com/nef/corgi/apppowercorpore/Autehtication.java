@@ -56,18 +56,27 @@ public class Autehtication extends Fragment {
         connect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String s_user = name.getEditableText().toString();
-                String s_pass = pass.getEditableText().toString();
+               /* String s_user = name.getEditableText().toString();
+                user = new userDTO(s_user);
+                Intent intent = new Intent(getActivity(),ServiceActivity.class);
+                intent.putExtra(ServiceActivity.PARAMETER_USER,s_user);
+                intent.putExtra("name","Hola"+s_user );
+                startActivity(intent);
+                mListener.onFragmentInteraction(user);*///Codigo de PRUEBAS(Basura)
+
+               String s_user = name.getEditableText().toString();
+               String s_pass = pass.getEditableText().toString();
                 String s_email = email.getEditableText().toString();
 
                 user = new userDTO(s_user, s_pass, s_email);
-               // Toast.makeText(getActivity(),s_user+"Hola",Toast.LENGTH_LONG);
+                //Toast.makeText(getActivity(),s_user+"Hola",Toast.LENGTH_LONG);
                 Intent intent = new Intent(getActivity(),ServiceActivity.class);
                 intent.putExtra(ServiceActivity.PARAMETER_USER,s_user);
                 intent.putExtra("name",s_user);
                 intent.putExtra("email",s_email);
                 intent.putExtra("pass",s_pass);
-                //startActivity(intent);
+                startActivity(intent);//con esto lanzamos el menu lateral, se dejara comentado ya que no se usa(solo tiene los estilos)
+                //Preguntar como quitar(en la barra de aplicacion)el ServiceActivity
                 mListener.onFragmentInteraction(user);
             }
 

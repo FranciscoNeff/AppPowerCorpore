@@ -31,7 +31,7 @@ public static final String PARAMETER_USER="name";
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                        .setAction("Action", null).show();//añadir accion(futuro)
             }
         });
 //Menu lateral
@@ -48,7 +48,8 @@ public static final String PARAMETER_USER="name";
         String s_user = intent.getStringExtra(PARAMETER_USER);
         String s_pass = intent.getStringExtra("pass");;
         String s_email =intent.getStringExtra("email");
-        Toast.makeText(this, s_user + " " + s_pass + " " + s_email + " " , Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, s_user + " " + s_pass + " " + s_email + " " , Toast.LENGTH_LONG).show();//se comenta ya q no es necesario mostrar el password y el mail
+        Toast.makeText(this, "Hola "+s_user , Toast.LENGTH_LONG).show();
     }
     @Override
     public void onBackPressed() {
@@ -88,16 +89,16 @@ public static final String PARAMETER_USER="name";
         int id = item.getItemId();
 
         if (id ==  R.id.nav_user) {
-
-        } else if (id == R.id.nav_rutinas) {
-
-        }else if (id == R.id.nav_resultados) {
-
+//opcion para ver datos del usuario
+        } else if (id == R.id.nav_work_out) {
+//opcion para elegir las rutinas
+        }else if (id == R.id.nav_result) {
+//opcion para ver los resultado las rutinas
         } else if (id == R.id.nav_share) {
-
+//opcion para compartir los resultados por redes sociales
 
         } else if (id == R.id.nav_send) {
-
+//opcion para mandar los datos almacenados al server
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

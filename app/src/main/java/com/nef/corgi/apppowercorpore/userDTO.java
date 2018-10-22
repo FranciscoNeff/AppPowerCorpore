@@ -34,7 +34,7 @@ public class userDTO {
         this.email_user = email_user;
         this.pass = pass;
     }
-
+public userDTO(String user_name){this.user_name = user_name;}
     public userDTO() {
         user_name = "name";
         email_user = "email";

@@ -17,4 +17,10 @@
     <string name="nav_header_desc">Navegation</string>
     <string name="nav_header_title">Header</string>
     <string name="nav_header_subtitle">header_subtitle</string>
+    <string name="nav_send">Update</string>
+    <string name="nav_share">Share</string>
+    <string name="nav_user">Profile</string>
+    <string name="nav_work_out">Work Out</string>
+    <string name="nav_result">Result</string>
+    <string name="title_communicate">Comunicate</string>
 </resources>

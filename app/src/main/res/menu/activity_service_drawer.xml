@@ -8,28 +8,28 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_user"
-            android:icon="@drawable/ic_menu_user"
-            android:title="Import" />
+            android:icon="@drawable/ic_action_folder_shared"
+            android:title="@string/nav_user" />
         <item
-            android:id="@+id/nav_rutinas"
-            android:icon="@drawable/ic_menu_rutinas"
-            android:title="Gallery" />
+            android:id="@+id/nav_work_out"
+            android:icon="@drawable/ic_action_pesa2"
+            android:title="@string/nav_work_out" />
         <item
-            android:id="@+id/nav_resultados"
-            android:icon="@drawable/ic_menu_rutinas"
-            android:title="Gallery" />
+            android:id="@+id/nav_result"
+            android:icon="@drawable/ic_action_assessment"
+            android:title="@string/nav_result" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="@string/title_communicate">
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:icon="@drawable/ic_action_share"
+                android:title="@string/nav_share" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:icon="@drawable/ic_action_screen_share"
+                android:title="@string/nav_send" />
         </menu>
     </item>
 
