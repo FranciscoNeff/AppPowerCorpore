@@ -15,7 +15,8 @@ import android.widget.Toast;
 //el email sera el identificador unico de nuestra aplicacion(futuro)
 //Aunque este el menu lateral este no se usa aun, solo tiene estilos por si en un futuro se usa
 //en Translations Edit, contraseña esta Untranslate debido a la ñ (si se ve que el uso de la ñ se hace casi obligatorio, se cambiara la fuente)
-//en nav tanto el header como el subtitulo cambiar el valor por el nombre del usuario como header y el mail como subtitule(futuro)
+//en nav tanto el header como el subtitulo cambiar el valor por el nombre del usuario como header y el mail como subtitule(futuro);estos ademas salen blancos por el tema(cambiarlo)
+//E/HAL: load: id=gralloc != hmi->id=gralloc He buscado como eliminar este fallo pero ni he encontrado ese id ni nada(no es un error critico)
 public class MainActivity extends AppCompatActivity implements Autehtication.OnFragmentInteractionListener{
 private userDTO user=null;
 
