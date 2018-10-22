@@ -1,19 +1,21 @@
 package com.nef.corgi.apppowercorpore;
 
+
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Button;
+
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 //el email sera el identificador unico de nuestra aplicacion
 public class MainActivity extends AppCompatActivity implements Autehtication.OnFragmentInteractionListener{
 private userDTO user=null;
-Button sign_in;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +23,7 @@ Button sign_in;
         Log.d("INICIO","Bienvenido a PowerCorpore");
         FragmentManager fm = getSupportFragmentManager();
         Fragment email_user = fm.findFragmentById(R.id.main_container);
-        //Binvenida y muestra el usuario
+        //Binvenida y muestra el nombre de usuario
         if(email_user==null) {
             FragmentTransaction ft = fm.beginTransaction();
             Autehtication fragment = Autehtication.newInstance("", "");
@@ -41,7 +43,7 @@ Button sign_in;
 
         }
 
-       //changetitle(user.getUser_name());//evitamos q coja el nombre name por defecto del ya creado
+       //changetitle(user.getUser_name());//evitamos q coja el nombre name por defecto del ya creado en la clase userDTO
     }
 
     public void changetitle(String title){
