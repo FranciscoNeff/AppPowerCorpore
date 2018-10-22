@@ -7,11 +7,11 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_user"
             android:icon="@drawable/ic_menu_user"
             android:title="Import" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_rutinas"
             android:icon="@drawable/ic_menu_rutinas"
             android:title="Gallery" />
         <item

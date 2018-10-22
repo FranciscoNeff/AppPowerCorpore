@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppPowerCorpore</string>
+    <string name="app_name">Power Corpore</string>
     <string name="fragment_auth_user">Name</string>
     <string name="login_hint_user">User Name</string>
     <string name="login_pass">Password</string>

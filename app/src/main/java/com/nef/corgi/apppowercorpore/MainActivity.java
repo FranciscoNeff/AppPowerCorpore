@@ -6,12 +6,14 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 //el email sera el identificador unico de nuestra aplicacion
 public class MainActivity extends AppCompatActivity implements Autehtication.OnFragmentInteractionListener{
 private userDTO user=null;
+Button sign_in;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +21,7 @@ private userDTO user=null;
         Log.d("INICIO","Bienvenido a PowerCorpore");
         FragmentManager fm = getSupportFragmentManager();
         Fragment email_user = fm.findFragmentById(R.id.main_container);
-        //Si no tenemos usuario iniciado incluimos la authetication,si no le damos la bienvenida
+        //Binvenida y muestra el usuario
         if(email_user==null) {
             FragmentTransaction ft = fm.beginTransaction();
             Autehtication fragment = Autehtication.newInstance("", "");
@@ -29,9 +31,9 @@ private userDTO user=null;
             Toast.makeText(this,getString(R.string.mainactivity_fragmentepresent), Toast.LENGTH_SHORT).show();
 
         if(savedInstanceState!=null){
-            String email = savedInstanceState.getString("email");
+            String name = savedInstanceState.getString("name");
             user = new userDTO();
-            user.setEmail_user(email);
+            user.setUser_name(name);
 
         }
         else {
@@ -39,7 +41,7 @@ private userDTO user=null;
 
         }
 
-     //   changetitle(user.getEmail_user());
+       //changetitle(user.getUser_name());//evitamos q coja el nombre name por defecto del ya creado
     }
 
     public void changetitle(String title){
@@ -52,7 +54,7 @@ private userDTO user=null;
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
-        outState.putString("email",user.getEmail_user());
+        outState.putString("name",user.getUser_name());
     }
 
     @Override

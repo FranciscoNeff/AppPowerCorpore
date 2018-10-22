@@ -46,6 +46,22 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <EditText
+            android:id="@+id/fragment_auth_edit_email"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_auth_label_pass"
+            android:layout_alignStart="@+id/fragment_auth_edit_pass"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@+id/fragment_auth_label_email"
+            android:ems="10"
+            android:hint="@string/login_hint_email"
+            android:inputType="text|textPersonName"
+            android:maxLines="1"
+            android:singleLine="false"
+            android:textStyle="italic" />
+        <EditText
             android:id="@+id/fragment_auth_edit_pass"
             style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
             android:layout_width="match_parent"
@@ -67,22 +83,7 @@
             android:text="@string/login_email"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-        <EditText
-            android:id="@+id/fragment_auth_edit_email"
-            style="@style/Widget.AppCompat.AutoCompleteTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/fragment_auth_label_pass"
-            android:layout_alignStart="@+id/fragment_auth_edit_pass"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="12dp"
-            android:layout_toEndOf="@+id/fragment_auth_label_email"
-            android:ems="10"
-            android:hint="@string/login_hint_email"
-            android:inputType="text|textPersonName"
-            android:maxLines="1"
-            android:singleLine="false"
-            android:textStyle="italic" />
+
 
         <Button
             android:id="@+id/fragment_auth_button"

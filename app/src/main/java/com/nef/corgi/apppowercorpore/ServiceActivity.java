@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 public class ServiceActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-public static final String PARAMETER_USER="user";
+public static final String PARAMETER_USER="name";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,9 +87,9 @@ public static final String PARAMETER_USER="user";
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id ==  R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id ==  R.id.nav_user) {
+
+        } else if (id == R.id.nav_rutinas) {
 
         }else if (id == R.id.nav_resultados) {
 

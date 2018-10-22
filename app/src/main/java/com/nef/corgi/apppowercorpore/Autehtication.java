@@ -64,7 +64,7 @@ public class Autehtication extends Fragment {
                // Toast.makeText(getActivity(),s_user+"Hola",Toast.LENGTH_LONG);
                 Intent intent = new Intent(getActivity(),ServiceActivity.class);
                 intent.putExtra(ServiceActivity.PARAMETER_USER,s_user);
-                intent.putExtra("pass",s_pass);
+                intent.putExtra("name",s_user);
                 intent.putExtra("email",s_email);
                 intent.putExtra("pass",s_pass);
                 //startActivity(intent);
