@@ -5,6 +5,25 @@ public class userDTO {
     private String email_user;
     private String pass;
 
+    public String getDominio() {
+        return dominio;
+    }
+
+    public void setDominio(String dominio) {
+        this.dominio = dominio;
+    }
+
+    public int getPuerto() {
+        return puerto;
+    }
+
+    public void setPuerto(int puerto) {
+        this.puerto = puerto;
+    }
+
+    private String dominio;
+    private int puerto;
+
     public String getUser_name() {
         return user_name;
     }
@@ -36,9 +55,12 @@ public class userDTO {
     }
 public userDTO(String user_name){this.user_name = user_name;}
     public userDTO() {
-        user_name = "name";
-        email_user = "email";
-        pass = "1234";
+        this.user_name = "name";
+        this.email_user = "email";
+        this.pass = "1234";
+        // como tanto el dominio como el puerto permanecera invisibles al usuario estos se pasara con un valor predifinido al usuario
+        dominio ="dominio";
+        puerto=00;
     }
 }
 
